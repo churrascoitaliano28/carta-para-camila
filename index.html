@@ -133,12 +133,28 @@
 <script>
   const scene = document.getElementById('scene');
   const hint = document.getElementById('hint');
-  document.getElementById('openBtn').addEventListener('click', () => {
-    scene.classList.add('opened'); hint.textContent = 'Una cartita escrita especialmente para ti ♡';
+    document.getElementById('openBtn').addEventListener('click', () => {
+    scene.classList.add('opened');
+    hint.textContent = 'Una carta para tu ♡';
+
+    document.getElementById('youtubeMusic').src =
+        "https://www.youtube.com/embed/X-Xxqt6Xdio?enablejsapi=1&autoplay=1&loop=1&playlist=X-Xxqt6Xdio";
+});
   });
   document.getElementById('againBtn').addEventListener('click', () => {
     scene.classList.remove('opened'); hint.textContent = 'Toca el sobre para abrirlo';
   });
 </script>
+ <div id="musica">
+    <iframe
+        id="youtubeMusic"
+        width="0"
+        height="0"
+        src="https://www.youtube.com/embed/X-Xxqt6Xdio?enablejsapi=1&autoplay=1&loop=1&playlist=X-Xxqt6Xdio"
+        title="Nuestra canción"
+        frameborder="0"
+        allow="autoplay; encrypted-media">
+    </iframe>
+</div>
 </body>
 </html>
